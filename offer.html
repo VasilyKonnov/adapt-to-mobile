@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="../dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-rating.css">
+    <script src="js/owl/owl.carousel.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="../../../../../Volumes/mac content/htdocs/best/src/pages/web-my-cards/web-my-cards.ts"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1ifagxF4bCQL7bci6nqguZu0zW6nnBlo&libraries=geometry"></script>
+</head>
+<body class="common" id="offer-page">
+
+<header >
+    <div class="header-top">
+        <section class="container padding-0">
+            <div>FreeTime - сервіс пошуку роботи та виконавців роботи для будь-якого завдання</div>
+            <div>
+                <div>
+                    <span><img src="images/location-icon.png"></span>
+                    <span>Ваше місто:</span>
+                    <div class="dropdown location">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Львів
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li></li>
+                            <li  class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown location">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">UA
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li></li>
+                            <li class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="" >
+                    <div class="my-account ">
+                        <span>Мій профіль</span>
+                        <section class="account-card none">
+                            <span class="triangle-account"></span>
+                            <div>
+                                <p>Профіль волонтера<img src="images/profile.png"><span></span></p>
+                                <div>
+                               <span>
+                               </span>
+                                    <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                                </div>
+                                <div>
+                                    <span>Роботодавець</span>
+                                    <span class="active-status">Виконавець</span>
+                                    <span >Волонтер</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#">Мої завдання</a></li>
+                                <li><a href="#">Запити на виконання</a></li>
+                                <li><a href="#">Обране</a></li>
+                                <li><a href="#">Вихід</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="header-bottom">
+        <section class="container padding-0">
+            <a  class="logo" href="#">
+                <img src="images/Logo.png">
+            </a>
+
+            <div>
+                <a href="#"><span>Знайти спеціаліста</span><img src="images/specialist.png"></a>
+                <a href="#"><span>Стати виконавцем</span><img src="images/lightbulb.png"></a>
+                <a href="#"><span>Для волонтерів</span><img src="images/volonteer.png"></a>
+            </div>
+            <form>
+                <input type="search" class="search-not-active" placeholder="Що потрібно зробити?">
+                <span>Пошук</span>
+            </form>
+        </section>
+    </div>
+</header>
+
+<div class="offer-block">
+<section class="container">
+    <ul class="bread-crumbs">
+        <li><a href="#">Головна</a></li>
+        <li><span>-></span></li>
+        <li><a href="#">Ремонт техніки</a></li>
+        <li><span>-></span></li>
+        <li><a href="#">Ремонт дрібної побутової техніки</a></li>
+    </ul>
+
+    <div class="container-offer row">
+        <div class="col-lg-8 padding-0">
+            <div class="wrapper-offer">
+                <section class="offer-left-top">
+                    <div>
+                        <span><img src="images/offer-calendar.png">13 Липня</span>
+                        <span><img src="images/offer-eye.png">28 переглядів</span>
+                        <span><img src="images/star-offer.png">5 обрано</span>
+                    </div>
+                    <div>
+                        <span class="active star"></span>
+                    </div>
+                </section>
+                <div class="offer-images">
+                    <h3>Ремонт, чистка, профілактика кавоварок. Професійна робота. Досвід роботи 10 років.</h3>
+                    <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                        <a href="images/3_zoom_1.jpg">
+                            <img src="images/3_standard_1.jpg" alt="" width="640" height="360" />
+                        </a>
+                    </div>
+                    <div>
+                    </div>
+
+                    <div class="thumbnails-wrapper">
+                        <a class="thumbnails-left"><img src="images/btn-go.png"></a>
+                        <a class="thumbnails-right"><img src="images/btn-go.png"></a>
+                    <ul class="thumbnails owl-carousel feedback-owl-slider owl-theme">
+                        <li class="item">
+                            <a href="images/3_zoom_1.jpg" data-standard="images/3_standard_1.jpg">
+                                <img src="images/3_thumbnail_1.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="images/3_zoom_2.jpg" data-standard="images/3_standard_2.jpg">
+                                <img src="images/3_thumbnail_2.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="images/3_zoom_3.jpg" data-standard="images/3_standard_3.jpg">
+                                <img src="images/3_thumbnail_3.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="images/3_zoom_4.jpg" data-standard="images/3_standard_4.jpg">
+                                <img src="images/3_thumbnail_4.jpg" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="offer-description">
+                    <h3>Опис завдання</h3>
+                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
+                    <p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                    <p>Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </div>
+
+                <div class="offer-map">
+                    <h3>Карта завдання</h3>
+                    <div id="googleMap" style="width:100%;height:354px;"></div>
+                </div>
+            </div>
+
+            </div>
+        <div class="col-lg-4">
+
+            <section class="offer-account-card">
+                <div><span>Роботодавець</span><a href="#">Шукаю спеціаліста <img src="images/amount-task.png"></a></div>
+                <section>
+                    <div>
+                        <span class="status status-one"></span>
+                    </div>
+                    <div>
+                        <span>Ігор</span>
+                        <span>sport_one</span>
+                    </div>
+                </section>
+                <a href="#" class="view-profile">Переглянути профіль</a>
+
+                <div class="rating">
+                    <span> <i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i> 5.0</span>
+                    <a href="#">переглянути відгуки</a>
+                </div>
+
+                <div class="task-amount">
+                    <section>Завдань виконано:</section>
+                    <section><img src="images/amount-task.png">25 завдань</section>
+                </div>
+
+                <div class="task-amount border">
+                    <section>Погодинна вартість:</section>
+                    <section><img src="images/avarage-time.png">100 грн / год</section>
+                </div>
+
+                <a class="suggest-work">Запропонувати роботу</a>
+            </section>
+
+            <section class="offer-account-link">
+                <h3>Ссилка на профіль:</h3>
+                <div>
+                    <input type="text" value="http://freetime.com/profile 2064145"><a ><img src="images/link.png"></a>
+                </div>
+                <h3>Розкажіть друзям:</h3>
+                <div>
+                    <a><img src="images/002-facebook.png"></a>
+                    <a><img src="images/003-twitter.png"></a>
+                    <a><img src="images/001-google-plus.png"></a>
+
+                </div>
+                <h3>Активність користувача:</h3>
+                <p>Користувач з жовтня 2018</p>
+            </section>
+    </div>
+    </div>
+</section>
+</div>
+
+
+<div>
+    <div class="container">
+        <profile-gallery></profile-gallery>
+    </div>
+</div>
+
+
+
+<section class="mobile-application">
+    <div class="container">
+        <div class="max-width">
+            <h3>мобільний додаток</h3>
+            <p>Ви завжди можете користуватися мобільним додатком <a href="#">FreeTime</a> щоб завжди бути на звязку не знаходячись вдома</p>
+            <section class="apps-links">
+                <div>
+                    <section href="#"><img src="images/_app_store_5122x.png"></section>
+                    <section>
+                        <span>iPhone</span>
+                        <a href="#">Завантажити <img src="images/download%20(1).png"></a>
+                    </section>
+                </div>
+                <div>
+                    <section href="#"><img src="images/google-play.png"></section>
+                    <section>
+                        <span>Android</span>
+                        <a href="#">Завантажити <img src="images/download%20(1).png"></a>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+
+<footer >
+    <div class="container">
+        <div class="max-width">
+            <div class="row">
+                <div >
+                    <section>
+                        <a href="#"><img src="images/Logo.png"></a>
+                        <p>Всі онлайн-вакансії та робота
+                            України на FreeTime - тут ви знайдете те, що шукали! </p>
+                    </section>
+
+                </div>
+
+                <div >
+                    <ul>
+                        <li><a href="#">Популярные запросы</a></li>
+                        <li><a href="#">Помощь и Обратная связь</a></li>
+                        <li><a href="#">Платные услуги</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                    </ul>
+                </div>
+
+                <div >
+                    <ul>
+                        <li><a href="#">Как нанимать и искать работу?</a></li>
+                        <li><a href="#">Правила безопасности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Карта регионов</a></li>
+                    </ul>
+                </div>
+                <div >
+                    <section>
+                        <a href="#">Для волонтерів <img src="images/eco-volunteer.png"></a>
+                    </section>
+                    <section>
+                        <span>Долучайтесь:</span>
+                        <a href="#" class="icon-001-google-play"></a>
+                        <a href="#" class="icon-002-app-store-apple-symbol"></a>
+                        <a href="#" class="icon-facebook-logo-button"></a>
+                        <a href="#" class="icon-vk-social-logotype"></a>
+                        <a href="#" class="icon-instagram-logo"></a>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+
+
+<script src="js/catalog-page-angular.js"></script>
+
+<script src="js/easyzoom.js"></script>
+
+
+<script>
+    var thumbnails = $('.thumbnails');
+    thumbnails.owlCarousel({
+        loop:true,
+        nav:true,
+        responsive:{
+
+            1000:{
+                items:5
+            }
+        }
+    })
+    $('.thumbnails-left').click(function () {
+        thumbnails.trigger('prev.owl.carousel');
+    })
+    $('.thumbnails-right').click(function () {
+        thumbnails.trigger('next.owl.carousel');
+    })
+</script>
+
+
+
+<script>
+    $('body').on('click', function(e) {
+        if($(e.target).closest('.my-account').length == 0) {
+            if(!$('.account-card').hasClass('none')){
+                $('.account-card').addClass('none');
+            }
+        }
+    });
+
+    $('.my-account > span').click(function () {
+        if($('.account-card').hasClass('none')){
+            $('.account-card').removeClass('none');
+        } else {
+            $('.account-card').addClass('none');
+        }
+    })
+</script>
+
+
+
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+
+    myMap();
+</script>
+
+
+<script>
+
+    // Instantiate EasyZoom instances
+    var $easyzoom = $('.easyzoom').easyZoom();
+
+    // Setup thumbnails example
+    var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+
+    $('.thumbnails').on('click', 'a', function(e) {
+        var $this = $(this);
+
+        e.preventDefault();
+
+        // Use EasyZoom's `swap` method
+        api1.swap($this.data('standard'), $this.attr('href'));
+    });
+
+    // Setup toggles example
+    var api2 = $easyzoom.filter('.easyzoom--with-toggle').data('easyZoom');
+
+    $('.toggle').on('click', function() {
+        var $this = $(this);
+
+        if ($this.data("active") === true) {
+            $this.text("Switch on").data("active", false);
+            api2.teardown();
+        } else {
+            $this.text("Switch off").data("active", true);
+            api2._init();
+        }
+    });
+
+</script>
+
+</html>

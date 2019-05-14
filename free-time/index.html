@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-rating.css">
+    <script src="js/owl/owl.carousel.js"></script>
+</head>
+<body class="common">
+
+<header >
+
+
+    <div class="header-top">
+        <section class="container padding-0">
+            <div>FreeTime - сервіс пошуку роботи та виконавців роботи для будь-якого завдання</div>
+           <div>
+               <div>
+                   <span><img src="images/location-icon.png"></span>
+                   <span>Ваше місто:</span>
+                   <div class="dropdown location">
+                   <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Львів
+                       <span class="caret"></span></button>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                       <li></li>
+                       <li  class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                   </ul>
+               </div>
+               </div>
+               <div>
+                   <div class="dropdown location">
+                       <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">UA
+                           <span class="caret"></span></button>
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                           <li></li>
+                           <li class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="" >
+                   <div class="my-account ">
+                       <span>Мій профіль</span>
+
+                       <section class="account-card none">
+                           <span class="triangle-account"></span>
+                           <div>
+                               <p>Профіль волонтера<img src="images/profile.png"><span></span></p>
+                               <div>
+                               <span>
+                               </span>
+                                   <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                               </div>
+                               <div>
+                                   <span>Роботодавець</span>
+                                   <span class="active-status">Виконавець</span>
+                                   <span >Волонтер</span>
+                               </div>
+                           </div>
+                           <ul>
+                               <li><a href="#">Мої завдання</a></li>
+                               <li><a href="#">Запити на виконання</a></li>
+                               <li><a href="#">Обране</a></li>
+                               <li><a href="#">Вихід</a></li>
+                           </ul>
+                       </section>
+                   </div>
+               </div>
+           </div>
+        </section>
+    </div>
+    <div class="header-bottom">
+        <section class="container padding-0">
+            <a  class="logo" href="#">
+                <img src="images/Logo.png">
+            </a>
+
+            <div>
+                <a href="#"><span>Знайти спеціаліста</span><img src="images/specialist.png"></a>
+                <a href="#"><span>Стати виконавцем</span><img src="images/lightbulb.png"></a>
+                <a href="#"><span>Для волонтерів</span><img src="images/volonteer.png"></a>
+            </div>
+            <form>
+                <input type="search" class="search-not-active" placeholder="Що потрібно зробити?">
+                <span>Пошук</span>
+            </form>
+        </section>
+    </div>
+</header>
+
+<section class="main-slider">
+    <span class="main-slider-left"><img src="images/main-sl-left.png"></span>
+    <span class="main-slider-right"><img src="images/main-sl-right.png"></span>
+    <div class="owl-carousel main-owl-slider owl-theme">
+        <div class="item">
+            <div class="main-slider-content" style="background-image: url('images/Plumbing-Problems-Miami-1160x700.png')">
+            <h3>потрібна допомога?</h3>
+        </div></div>
+        <div class="item">
+            <div class="main-slider-content container" style="background-image: url('images/261909-P4LPVO-413.png')">
+                <h3>потрібна допомога?</h3>
+            </div></div>
+    </div>
+    <div class="search-section">
+        <div class="container">
+            <h3>Знайдіть виконавця вбо волнтера за кілька кліків</h3>
+            <search-free   class="search-component" style="display: block"></search-free>
+            <section>
+                <span>Наприклад: <strong id="example">фотограф</strong></span>
+                <span>Більше 100 000 перевірених фахівців та волонтерів. Погодинна оплата, або безкоштовні хоббі </span>
+            </section>
+        </div>
+    </div>
+</section>
+
+<section class="time-for-money">
+    <h3>Ваш час - за гроші</h3>
+<div class="container">
+<div class="col-lg-6">
+    <h4>Потрібен додатковий заробіток?</h4>
+    <p>Маєте кілька годин у день  для роботи,
+        волонтерства чи оримання нових навичок?
+        Хочете працювати на повну ставку?
+        Або просто хочете скласти компанію на рибалку?
+        Тоді ви потрібні <span>FreeTime.</span>
+        Погодинна оплата <span>ВАШОГО ЧАСУ.</span></p>
+    <a href="#">Стати виконавцем або волонтером</a>
+</div>
+    <div class="col-lg-6">
+        <img src="images/Mask%20Group.png">
+    </div>
+</div>
+</section>
+
+<section class="last-order">
+    <h3>останні заявки</h3>
+    <div class="container">
+
+        <span class="last-order-slider-left"><img src="images/double-angle-pointing-to-left.png"></span>
+        <span class="last-order-slider-right"><img src="images/double-angle-pointing-to-right%20.png"></span>
+        <div class="last-order-slider owl-carousel">
+            <div>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="inactive"></span></p>
+                    <h4>Потрібен маляр</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>400 грн</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="active"></span></p>
+                    <h4>Вчитель. Підготовка до ЗНО</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+              <div><span>100 грн / год</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="active"></span></p>
+                    <h4>Консультація юриста</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>500 грн</span> <a href="#">Детальніше</a></div>
+                </section>
+            </div>
+            <div>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="inactive"></span></p>
+                    <h4>Потрібен маляр</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>400 грн</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="active"></span></p>
+                    <h4>Вчитель. Підготовка до ЗНО</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>100 грн / год</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="active"></span></p>
+                    <h4>Консультація юриста</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>500 грн</span> <a href="#">Детальніше</a></div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="now-on-website">
+<h3>зараз на сайті</h3>
+    <div class="container">
+     <div class="row">
+         <section class="col-lg-4 now-on-website-content">
+            <p><span><img src="images/001-idea.png"></span><span>6548</span></p>
+             <div>професіоналів та волонтерів</div>
+         </section>
+
+         <section class="col-lg-4 now-on-website-content">
+             <p><span><img src="images/003-computer.png"></span><span>4684</span></p>
+             <div>вакансій
+                 та пропозицій</div>
+         </section>
+
+         <section class="col-lg-4 now-on-website-content">
+             <p><span><img src="images/004-stamp.png"></span><span>7642</span></p>
+             <div>виконаних робіт
+                 та  проектів</div>
+         </section>
+     </div>
+    </div>
+</section>
+
+
+<section class="last-order top-worker">
+    <h3>топ виконавців</h3>
+    <div class="container">
+
+        <span class="last-order-slider-left"><img src="images/double-angle-pointing-to-left.png"></span>
+        <span class="last-order-slider-right"><img src="images/double-angle-pointing-to-right%20.png"></span>
+        <div class="last-order-slider owl-carousel">
+            <div>
+                <section class="last-order-slider-content">
+                    <p><span>Виконавці<img src="images/light-bulb.png"></span><span class="inactive"></span></p>
+                   <section>
+                        <span>
+                               </span>
+                       <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                   </section>
+                    <h4>Няня з освітою вихователя</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>50 грн / год</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p class="none"><span></span><span class="active"></span></p>
+                    <section>
+                        <span >
+                            <img src="images/user-prof-img.png">
+                               </span>
+                        <span>
+                                   <p>Ігор</p>
+                                    <p>sport_one</p>
+                               </span>
+                    </section>
+                    <h4>Персональний тренер з фітнесу та TRX</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>100 грн</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p class="volunteer">
+                        <span>Волонтери<img src="images/profile.png"></span><span class="active"></span>
+                    </p>
+                    <section>
+                        <span>
+                               </span>
+                        <span>
+                                   <p>Ірина</p>
+                                    <p>irka_777</p>
+                               </span>
+                    </section>
+                    <h4>Хочу навчитися шити іграшки. Маю 3 години в день</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>Безкоштовно</span> <a href="#">Детальніше</a></div>
+                </section>
+            </div>
+            <div>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="inactive"></span></p>
+                    <section>
+                        <span>
+                               </span>
+                        <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                    </section>
+                    <h4>Потрібен маляр</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>400 грн</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="active"></span></p>
+                    <section>
+                        <span>
+                               </span>
+                        <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                    </section>
+                    <h4>Вчитель. Підготовка до ЗНО</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>100 грн / год</span> <a href="#">Детальніше</a></div>
+                </section>
+                <section class="last-order-slider-content">
+                    <p><span>Заявка на роботу<img src="images/user2.png"></span><span class="active"></span></p>
+                    <section>
+                        <span>
+                               </span>
+                        <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                    </section>
+                    <h4>Консультація юриста</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div><span>500 грн</span> <a href="#">Детальніше</a></div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="how-it-works">
+    <h3>Як це працює</h3>
+    <div class="container">
+
+        <section>
+
+
+        </section>
+
+        <section>
+
+        </section>
+    </div>
+</section>
+
+
+
+    </body>
+<script src="js/framework-poll.js"></script>
+<script>
+    let component = document.querySelector('search-free');
+
+    component.data = { city_placeholder: 'Виберіть місто',
+        what_to_do_placeholder: 'Що потрібно зробити?',search_name: 'Пошук'};
+
+    let example = document.getElementById('example');
+
+    example.addEventListener("click",function (ev) {
+        component.example = example.innerText;
+    });
+
+    component.regions = [
+        { region: 'Одесская область',
+            cities: [
+                {city: 'Ананьев', region: 'Одесская область'},
+                {city: 'Балта', region: 'Одесская область'},
+                {city: 'Белгород-Днестровский', region: 'Одесская область'},
+                {city: 'Беляевка', region: 'Одесская область'},
+                {city: 'Березовка', region: 'Одесская область'},
+            ]},
+        {region: 'Запорожская область',
+
+            cities: [
+                {city: 'Акимовка', region: 'Запорожская область'},
+                {city: 'Вольнянск', region: 'Запорожская область'},
+                {city: 'Кушугум', region: 'Запорожская область'},
+                {city: 'Приморск', region: 'Запорожская область'},
+                {city: 'Энергодар', region: 'Запорожская область'},
+            ]},
+        {region: 'Винницкая область',
+
+            cities: [
+                {city: 'Бар', region: 'Винницкая область'},
+                {city: 'Бершадь', region: 'Винницкая область'},
+                {city: 'Винница', region: 'Винницкая область'},
+                {city: 'Гайсин', region: 'Винницкая область'},
+            ]}
+
+    ];
+</script>
+<script>
+
+    $('body').on('click', function(e) {
+        if($(e.target).closest('.my-account').length == 0) {
+            if(!$('.account-card').hasClass('none')){
+                $('.account-card').addClass('none');
+            }
+        }
+    });
+
+    $('.my-account > span').click(function () {
+
+
+        if($('.account-card').hasClass('none')){
+            $('.account-card').removeClass('none');
+        } else {
+            $('.account-card').addClass('none');
+        }
+    })
+</script>
+<script>
+
+
+    var lastOrder = $('.last-order-slider');
+
+    lastOrder.owlCarousel({
+        loop:true,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    $('.last-order-slider-left').click(function () {
+        lastOrder.trigger('prev.owl.carousel');
+    })
+    $('.last-order-slider-right').click(function () {
+        lastOrder.trigger('next.owl.carousel');
+    })
+
+
+
+    var owl = $('.main-owl-slider');
+
+   owl.owlCarousel({
+        loop:true,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
+
+    $('.main-slider-left').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
+    $('.main-slider-right').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+</script>
+
+
+</html>

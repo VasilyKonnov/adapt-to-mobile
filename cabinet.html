@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="../dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-rating.css">
+    <script src="js/owl/owl.carousel.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../Users/alexandr/Desktop/styles.css">
+
+</head>
+<body class="common" id="cabinet">
+
+<header >
+    <div class="header-top">
+        <section class="container padding-0">
+            <div>FreeTime - сервіс пошуку роботи та виконавців роботи для будь-якого завдання</div>
+            <div>
+                <div>
+                    <span><img src="images/location-icon.png"></span>
+                    <span>Ваше місто:</span>
+                    <div class="dropdown location">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Львів
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li></li>
+                            <li  class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown location">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">UA
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li></li>
+                            <li class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="" >
+                    <div class="my-account ">
+                        <span>Мій профіль</span>
+
+                        <section class="account-card none">
+                            <span class="triangle-account"></span>
+                            <div>
+                                <p>Профіль волонтера<img src="images/profile.png"><span></span></p>
+                                <div>
+                               <span>
+                               </span>
+                                    <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                                </div>
+                                <div>
+                                    <span>Роботодавець</span>
+                                    <span class="active-status">Виконавець</span>
+                                    <span >Волонтер</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#">Мої завдання</a></li>
+                                <li><a href="#">Запити на виконання</a></li>
+                                <li><a href="#">Обране</a></li>
+                                <li><a href="#">Вихід</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="header-bottom">
+        <section class="container padding-0">
+            <a  class="logo" href="#">
+                <img src="images/Logo.png">
+            </a>
+
+            <div>
+                <a href="#"><span>Знайти спеціаліста</span><img src="images/specialist.png"></a>
+                <a href="#"><span>Стати виконавцем</span><img src="images/lightbulb.png"></a>
+                <a href="#"><span>Для волонтерів</span><img src="images/volonteer.png"></a>
+            </div>
+            <form>
+                <input type="search" class="search-not-active" placeholder="Що потрібно зробити?">
+                <span>Пошук</span>
+            </form>
+        </section>
+    </div>
+</header>
+
+<section class="container">
+    <ul class="bread-crumbs">
+        <li><a href="#">Головна</a></li>
+        <li><span>-&gt;</span></li>
+        <li><a href="#"> Персональний кабінет</a></li>
+    </ul>
+    <user-cabinet ></user-cabinet>
+</section>
+
+<section class="mobile-application">
+    <div class="container">
+        <div class="max-width">
+            <h3>мобільний додаток</h3>
+            <p>Ви завжди можете користуватися мобільним додатком <a href="#">FreeTime</a> щоб завжди бути на звязку не знаходячись вдома</p>
+            <section class="apps-links">
+                <div>
+                    <section href="#"><img src="images/_app_store_5122x.png"></section>
+                    <section>
+                        <span>iPhone</span>
+                        <a href="#">Завантажити <img src="images/download%20(1).png"></a>
+                    </section>
+                </div>
+                <div>
+                    <section href="#"><img src="images/google-play.png"></section>
+                    <section>
+                        <span>Android</span>
+                        <a href="#">Завантажити <img src="images/download%20(1).png"></a>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-us">
+    <div class="container">
+        <div class="max-width">
+            <h3>трохи про нас</h3>
+            <p><a href="#">FreeTime</a> - це абсолютно новий і єдиний сервіс по інтернет-маркетингу, який безпосередньо об&apos;єднує власників сайтів і SEO фахівців. Даний проект покликаний полегшити власникам сайтів пошук при підборі потрібного фахівця і суттєво скоротити витрати на просуванні свого бізнесу в Інетрнет. Сервіс SKAFI зібрав не тільки всіх фахівців / фрілансерів але також великі і дрібні компанії, які займаються всілякими послугами з просування бізнесу в інтернеті.</p>
+            <p>Всі онлайн-оголошення України на <a href="#">FreeTime</a> - тут ви знайдете те, що шукали! Натиснувши на кнопку <a href="#">&quot;Знайти спеціаліста&quot;,</a> ви зможете розмістити оголошення на будь-яку тематику легко і швидко.
+                За допомогою сервісу <a href="#">FreeTime</a> ви зможете знайти виконавця або роботу з усієї України.о б залишити заявку потрібно всього кілька хвилин, і вже протягом дня, у вас буде сотні пропозицій від SEO фахівців і компаній.</p>
+
+            <div class="more-less none less"><span href="#">Менше<img src="images/arrow-top.png"></a></div>
+            <div class="more-less more"><span >більше<img src="images/arrow-top.png"></span></div>
+
+
+            <section class="more-content none">
+                <div class="more-content-item">
+                    <section>
+                        <span class="special active"></span>
+                        <img src="images/150134-OTYSIE-389.png">
+                    </section>
+                    <section>
+                        <h4>Няня на всі руки</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <div>
+                            <span><a>Статті: </a><span><img src="images/calendar-with-spring-binder-and-date-blocks.png">11.07.2018</span></span>
+                            <a href="#">Детальніше</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="more-content-item">
+                    <section>
+                        <span class="special inactive"></span>
+                        <img src="images/966%20(1).png">
+                    </section>
+                    <section>
+                        <h4>Персональний тренер</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <div>
+                            <span><a>Статті: </a><span><img src="images/calendar-with-spring-binder-and-date-blocks.png">11.07.2018</span></span>
+                            <a href="#">Детальніше</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="more-content-item">
+                    <section>
+                        <span class="special active"></span>
+                        <img src="images/4056.png">
+                    </section>
+                    <section>
+                        <h4>Заклинило замок?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <div>
+                            <span><a>Статті: </a><span><img src="images/calendar-with-spring-binder-and-date-blocks.png">11.07.2018</span></span>
+                            <a href="#">Детальніше</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+<footer >
+    <div class="container">
+
+
+        <div class="max-width">
+            <div class="row">
+                <div >
+                    <section>
+                        <a href="#"><img src="images/Logo.png"></a>
+                        <p>Всі онлайн-вакансії та робота
+                            України на FreeTime - тут ви знайдете те, що шукали! </p>
+                    </section>
+
+                </div>
+
+                <div >
+                    <ul>
+                        <li><a href="#">Популярные запросы</a></li>
+                        <li><a href="#">Помощь и Обратная связь</a></li>
+                        <li><a href="#">Платные услуги</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+
+                    </ul>
+                </div>
+
+                <div >
+                    <ul>
+                        <li><a href="#">Как нанимать и искать работу?</a></li>
+                        <li><a href="#">Правила безопасности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Карта регионов</a></li>
+                    </ul>
+                </div>
+                <div >
+                    <section>
+                        <a href="#">Для волонтерів <img src="images/eco-volunteer.png"></a>
+                    </section>
+                    <section>
+                        <span>Долучайтесь:</span>
+                        <a href="#" class="icon-001-google-play"></a>
+                        <a href="#" class="icon-002-app-store-apple-symbol"></a>
+                        <a href="#" class="icon-facebook-logo-button"></a>
+                        <a href="#" class="icon-vk-social-logotype"></a>
+                        <a href="#" class="icon-instagram-logo"></a>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+<script src="js/bootstrap-tagsinput.min.js"></script>
+<script src="js/cabinet.js"></script>
+
+
+<script>
+    $('.more-less').click(function () {
+        if($('.more-content').hasClass('none')) {
+            $('.more-less.less').removeClass('none');
+            $('.more-less.more').addClass('none');
+            $('.more-content').removeClass('none')
+        } else {
+            $('.more-less.less').addClass('none');
+            $('.more-less.more').removeClass('none');
+            $('.more-content').addClass('none')
+        }
+    })
+</script>
+
+<script>
+
+    $('body').on('click', function(e) {
+        if($(e.target).closest('.my-account').length == 0) {
+            if(!$('.account-card').hasClass('none')){
+                $('.account-card').addClass('none');
+            }
+        }
+    });
+
+    $('.my-account > span').click(function () {
+
+
+        if($('.account-card').hasClass('none')){
+            $('.account-card').removeClass('none');
+        } else {
+            $('.account-card').addClass('none');
+        }
+    })
+</script>
+
+
+
+</html>

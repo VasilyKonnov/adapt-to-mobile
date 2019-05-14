@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+.plain-container{
+  max-width:1160px;
+  flex-wrap: wrap;
+}
+
+.plain-container .image{
+  margin-bottom: 6px!important;
+  margin-left: 0!important;
+  margin-right: 6px!important;
+}
+
+.ng-overlay{
+  background: rgba(0, 0, 0, 0.2)!important;
+}
+
+/*.inside.current-image-next,*/
+/*.inside.current-image-previous{*/
+/*display: none;*/
+/*}*/
+
+#current-img{
+  max-width: 1042px;
+}
+
+
+.right-arrow-image, .left-arrow-image{
+  height: 52px!important;
+  background-repeat: no-repeat;
+}
+
+//.left-arrow-image{
+//  background-image: url("assets/images/arrow-point-to-right.png")!important;
+//}
+
+.current-image-next,
+.current-image-previous{
+  display: none!important;
+}
+.previews-container{
+  display: none!important;
+}
+.inside.description{
+  display: none;
+}
+
+
+//.right-arrow-image{
+//  background-image: url("assets/images/arrow-point-to-left.png")!important;
+//}

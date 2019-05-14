@@ -1,0 +1,294 @@
+#profile-card{
+  @import "gallery";
+
+
+  .categories-container{
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 6px 0;
+   position: relative;
+    z-index: 1;
+  }
+  .gallery-block{
+    padding: 45px 0;
+    background: white;
+
+    h3{
+      font-size: 22px;
+      color: #4C4C4C;
+      margin-bottom: 28px;
+      font-weight: bold;
+    }
+
+  }
+
+  .profile-block{
+    background: #F9F9F9;
+    padding: 13px 0;
+
+    .profile-card{
+      margin-top: 25px;
+       background: white;
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      padding: 7px 30px 29px 31px;
+      margin-bottom: 12px;
+      display: flex;
+      height: 500px;
+
+
+      & > div{
+        flex: 1;
+
+        &:nth-of-type(2){
+          padding-top: 48px;
+
+          & > a{
+            width: 231px;
+            height: 48px;
+            background: #209CFF;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 40px;
+            display: block;
+            line-height: 48px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 30px;
+            margin-left: 16px;
+            cursor: pointer;
+          }
+
+        & > section{
+          border-bottom: 1px solid #E0E0E0;
+          padding-bottom: 15px;
+          padding-top: 6px;
+          padding-left: 32px;
+
+
+          & > span:nth-of-type(1){
+            color: #A0A0A0;
+            font-size: 14px;
+          }
+
+          &:nth-of-type(1){
+            display: flex;
+            align-items: center;
+            .favorite-star{
+              margin-left: 15px;
+            }
+          }
+
+          &:nth-of-type(3), &:nth-of-type(4){
+            & > div{
+              color: #27AE60;
+              font-weight: bold;
+              font-size: 24px;
+            }
+
+
+            img{
+              margin-right: 5px;
+            }
+
+            & > span{
+              margin-bottom: 14px;
+              display: block;
+            }
+
+          }
+
+          &:nth-of-type(2){
+            font-size: 26px;
+            color: #f2994a;
+
+            i{
+              margin-right: 6px;
+              &:before{
+                color: #f2994a;
+                font-size: 24px;
+              }
+            }
+            div{
+              margin-top: 17px;
+              margin-bottom: 4px;
+            }
+
+            a{
+              font-size: 14px;
+              text-decoration-line: underline;
+
+              /* Buttons */
+              color: #209CFF;
+            }
+          }
+
+
+        }
+        }
+        &:nth-of-type(1){
+          padding-right: 15px;
+
+          & > section:nth-of-type(4){
+            h3{
+              color: #4C4C4C;
+              margin-bottom: 19px;
+              font-weight: bold;
+              font-size: 18px;
+              padding-top: 20px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 16px;
+              color: #4C4C4C;
+            }
+          }
+
+          & > section:nth-of-type(3){
+            padding: 15px 0;
+            border-bottom:1px solid #E0E0E0;
+            display: flex;
+            & > span{
+              background: #EFEFEF;
+              border-radius: 6px;
+              height: 25px;
+              padding: 0 10px;
+              line-height: 25px;
+              font-size: 12px;
+              margin-right: 6px;
+
+            }
+          }
+          & > section:nth-of-type(1){
+            max-width: 356px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+
+            margin-bottom: 26px;
+
+            a{
+              text-decoration-line: underline;
+              color: #A0A0A0;
+            }
+
+            span:nth-of-type(1){
+              color: #27AE60;
+            }
+
+            span:nth-of-type(2){
+              color: #F2994A;
+              position: relative;
+                &:after{
+                  position: absolute;
+                  content: '';
+                  display: block;
+                  width: 20px;
+                  background: #f2994a;
+                  border-radius: 50%;
+                  height: 20px;
+                  left: -28px;
+                  top: -3px;
+                  background-image: url(../images/royal-crown.png);
+                  background-repeat: no-repeat;
+                  background-position: 4px 4px;
+                }
+            }
+          }
+
+          & > section:nth-of-type(2){
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 15px;
+            display: flex;
+
+            .profile-names{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding: 10px 0;
+              span:nth-of-type(1),span:nth-of-type(2){
+                font-weight: 500;
+                font-size: 18px;
+                color: #4C4C4C;
+              }
+
+              span:nth-of-type(3){
+                font-weight: 500;
+                line-height: 26px;
+                font-size: 16px;
+                color: #209CFF;
+
+                img{
+                  margin-right: 5px;
+                }
+              }
+            }
+
+            .profile-avatar{
+              width: 103.65px;
+              height: 103.58px;
+              border-radius: 50%;
+              border: 2px solid #E0E0E0;
+              background-image: url("../images/default-user-img.png");
+              background-repeat: no-repeat;
+              background-position: 34px;
+              position: relative;
+              margin-right: 25px;
+
+              span{
+                width: 35.5px;
+                height: 35.47px;
+                border-radius: 50%;
+                display: block;
+                right: 0;
+                position: absolute;
+                background-repeat: no-repeat;
+
+                img{
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                }
+                &.active{
+                  background: #F2994A;
+                  background-image: url("../images/royal-crown_profile.png");
+                  background-repeat: no-repeat;
+                  background-position: 8px;
+                }
+
+                &.inactive{
+                  background: #6fcf97;
+                  background-image: url("../images/bird2.png");
+                  background-position: 11px;
+                  background-size: 15px;
+                  background-repeat: no-repeat;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(2){
+          border-left: 1px solid #E0E0E0;
+          max-width: 298px;
+          min-width: 298px;
+          padding-left: 14px;
+        }
+      }
+    }
+  }
+
+  .feedback-page-block{
+    padding-top: 52px;
+    padding-bottom: 21px;
+    background: #F9F9F9;
+
+    & > div > div > h3{
+      font-size: 22px;
+      color: #4c4c4c;
+      margin-bottom: 28px;
+      font-weight: 700;
+    }
+  }
+
+
+}

@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="../dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-rating.css">
+    <script src="js/owl/owl.carousel.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1ifagxF4bCQL7bci6nqguZu0zW6nnBlo&libraries=geometry"></script>
+</head>
+<body class="common" id="profile-card">
+
+<header >
+    <div class="header-top">
+        <section class="container padding-0">
+            <div>FreeTime - сервіс пошуку роботи та виконавців роботи для будь-якого завдання</div>
+            <div>
+                <div>
+                    <span><img src="images/location-icon.png"></span>
+                    <span>Ваше місто:</span>
+                    <div class="dropdown location">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Львів
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li></li>
+                            <li  class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown location">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">UA
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li></li>
+                            <li class="active-drop" role="presentation"><a role="menuitem" tabindex="-1" href="#">Українська</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="" >
+                    <div class="my-account ">
+                        <span>Мій профіль</span>
+                        <section class="account-card none">
+                            <span class="triangle-account"></span>
+                            <div>
+                                <p>Профіль волонтера<img src="images/profile.png"><span></span></p>
+                                <div>
+                               <span>
+                               </span>
+                                    <span>
+                                   <p>Оксана</p>
+                                    <p>oks_teach24</p>
+                               </span>
+                                </div>
+                                <div>
+                                    <span>Роботодавець</span>
+                                    <span class="active-status">Виконавець</span>
+                                    <span >Волонтер</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#">Мої завдання</a></li>
+                                <li><a href="#">Запити на виконання</a></li>
+                                <li><a href="#">Обране</a></li>
+                                <li><a href="#">Вихід</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="header-bottom">
+        <section class="container padding-0">
+            <a  class="logo" href="#">
+                <img src="images/Logo.png">
+            </a>
+
+            <div>
+                <a href="#"><span>Знайти спеціаліста</span><img src="images/specialist.png"></a>
+                <a href="#"><span>Стати виконавцем</span><img src="images/lightbulb.png"></a>
+                <a href="#"><span>Для волонтерів</span><img src="images/volonteer.png"></a>
+            </div>
+            <form>
+                <input type="search" class="search-not-active" placeholder="Що потрібно зробити?">
+                <span>Пошук</span>
+            </form>
+        </section>
+    </div>
+</header>
+
+<div class="categories-container">
+    <div class="container">
+        <category-profile  ></category-profile>
+    </div>
+</div>
+
+<div class="profile-block">
+
+    <div class="container padding-0">
+        <ul class="bread-crumbs">
+            <li><a href="#">Головна</a></li>
+            <li><span>-></span></li>
+            <li><a href="#">Ремонт техніки</a></li>
+            <li><span>-></span></li>
+            <li><a href="#">Ремонт дрібної побутової техніки</a></li>
+        </ul>
+
+          <div class="profile-card">
+              <div>
+                  <section>
+                      <a href="#">Виконавці <img src="images/light-bulb-1.png"></a>
+                      <span>Був онлайн: 30хв назад</span>
+                      <span>VIP</span>
+                  </section>
+
+                  <section>
+                      <div class="profile-avatar">
+                          <span class="inactive"></span>
+                      </div>
+
+                      <div class="profile-names">
+                          <span>Ігор Сергійович</span>
+                          <span>sport_one</span>
+                          <span><img src="images/ic_location.png">м.Київ, Жуляни </span>
+                      </div>
+                      <div>
+
+                      </div>
+                  </section>
+
+                  <section>
+                        <span>ремонт електротехніки </span> <span>електрик</span> <span>ремонт дрібної побутової техніки</span>
+                  </section>
+
+                  <section>
+                      <h3>Професійний майстер з ремонту дрібної побутової техніки</h3>
+                      <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                  </section>
+
+              </div>
+
+
+              <div>
+                  <section>
+                      <span>Додати у обрані:</span> <span class="favorite-star active"></span>
+                  </section>
+                  <section>
+                     <span>Рейтинг виконавця:</span>
+                      <div>
+                          <i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i>
+                        5.0
+                      </div>
+                      <a>переглянути відгуки</a>
+                  </section>
+                  <section>
+                      <span>Завдань виконано:</span>
+                      <div><img src="images/profile_lighbulb.png">25 завдань</div>
+                  </section>
+                  <section>
+                      <span>Погодинна вартість:</span>
+                      <div><img src="images/002-time-is-money.png"> 100 грн / год</div>
+                  </section>
+                  <a>Запропонувати роботу</a>
+              </div>
+          </div>
+    </div>
+</div>
+
+<section class="container padding-0 gallery-block">
+    <div class="max-width">
+        <h3>Галерая виконаних робіт</h3>
+        <profile-gallery></profile-gallery>
+    </div>
+</section>
+
+<div class="feedback-page-block">
+    <div class="container ">
+        <div class="max-width">
+            <h3>Відгуки</h3>
+            <feedback-profile></feedback-profile>
+        </div>
+    </div>
+</div>
+
+
+<section class="mobile-application">
+    <div class="container">
+        <div class="max-width">
+            <h3>мобільний додаток</h3>
+            <p>Ви завжди можете користуватися мобільним додатком <a href="#">FreeTime</a> щоб завжди бути на звязку не знаходячись вдома</p>
+            <section class="apps-links">
+                <div>
+                    <section href="#"><img src="images/_app_store_5122x.png"></section>
+                    <section>
+                        <span>iPhone</span>
+                        <a href="#">Завантажити <img src="images/download%20(1).png"></a>
+                    </section>
+                </div>
+                <div>
+                    <section href="#"><img src="images/google-play.png"></section>
+                    <section>
+                        <span>Android</span>
+                        <a href="#">Завантажити <img src="images/download%20(1).png"></a>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+
+<footer >
+    <div class="container">
+        <div class="max-width">
+            <div class="row">
+                <div >
+                    <section>
+                        <a href="#"><img src="images/Logo.png"></a>
+                        <p>Всі онлайн-вакансії та робота
+                            України на FreeTime - тут ви знайдете те, що шукали! </p>
+                    </section>
+
+                </div>
+
+                <div >
+                    <ul>
+                        <li><a href="#">Популярные запросы</a></li>
+                        <li><a href="#">Помощь и Обратная связь</a></li>
+                        <li><a href="#">Платные услуги</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                    </ul>
+                </div>
+
+                <div >
+                    <ul>
+                        <li><a href="#">Как нанимать и искать работу?</a></li>
+                        <li><a href="#">Правила безопасности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Карта регионов</a></li>
+                    </ul>
+                </div>
+                <div >
+                    <section>
+                        <a href="#">Для волонтерів <img src="images/eco-volunteer.png"></a>
+                    </section>
+                    <section>
+                        <span>Долучайтесь:</span>
+                        <a href="#" class="icon-001-google-play"></a>
+                        <a href="#" class="icon-002-app-store-apple-symbol"></a>
+                        <a href="#" class="icon-facebook-logo-button"></a>
+                        <a href="#" class="icon-vk-social-logotype"></a>
+                        <a href="#" class="icon-instagram-logo"></a>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div></div>
+</footer>
+
+<!--&lt;!&ndash;<category-profile></category-profile>&ndash;&gt;-->
+<!--<profile-gallery></profile-gallery>-->
+
+<!--<div style="max-width: 1161px;margin: 0 auto;">-->
+    <!--<tasks-profile></tasks-profile>-->
+<!--</div>-->
+
+
+
+</body>
+
+
+<script src="js/profile-components.js"></script>
+
+
+
+
+</body>
+
+<script>
+
+    let feedback = document.querySelector('feedback-profile');
+
+    const feedback_data = [
+        {
+            type: 1,
+            rating: {
+                overall: '3.5',
+                pozitive: 82,
+                amount: 26,
+                quality: 90,
+                punctuality: 76,
+                responsiveness: 10,
+            },
+            feedbacks: [
+                {
+                    name: 'Василь Кросенець1',
+                    date: '02.07.2018',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.1'
+                },
+                {
+                    name: 'Василь Кросенець2',
+                    date: '02.07.2017',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.2'
+                },
+                {
+                    name: 'Василь Кросенець3',
+                    date: '02.07.2018',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.1'
+                },
+                {
+                    name: 'Василь Кросенець4',
+                    date: '02.07.2017',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.2'
+                },
+                {
+                    name: 'Василь Кросенець5',
+                    date: '02.07.2018',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.1'
+                },
+                {
+                    name: 'Василь Кросенець5',
+                    date: '02.07.2017',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.2'
+                },
+                {
+                    name: 'Василь Кросенець6',
+                    date: '02.07.2018',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.1'
+                },
+                {
+                    name: 'Василь Кросенець7',
+                    date: '02.07.2017',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.2'
+                },
+                {
+                    name: 'Василь Кросенець8',
+                    date: '02.07.2017',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.2'
+                }
+            ]
+        },
+        {
+            type: 2,
+            rating: {
+                overall: '4.1',
+                pozitive: 60,
+                amount: 40,
+                quality: 80,
+                punctuality: 76,
+                responsiveness: 10,
+            },
+            feedbacks: [
+                {
+                    name: '1Василь Кросенець',
+                    date: '02.07.2018',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.1'
+                },
+                {
+                    name: '2Василь Кросенець',
+                    date: '02.07.2017',
+                    state: 'Добре',
+                    description: 'Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто! Дуже крутий сервіс, знайшов виконаця за 1 день. Все зробили. Дуже задоволений буду користуватися і ремомендувати друзям. Дякую команді FreeTime за можлдивість економити час та гроші. Круто!',
+                    rating: '4.2'
+                }
+            ]
+        }
+    ];
+
+
+
+    let tasks = document.querySelector('tasks-profile');
+
+    const  offers = [
+        { id: 1,
+            img: null,
+            name: 'Юрій Т.',
+            login: 'sport_one',
+            feedback_amount: 34,
+            status: 2,
+            last_visit: '30хв назад',
+            title: 'Ремонт, чистка, профілактика кавоварок',
+            description: 'Ремонт кавоварок. Виїзд майстра (Київ) - 150 грн З питань що стосуються ремонтів та інших послуг телефонуйте.',
+            price: '100 грн / год',
+            time_status : 1
+        },
+        { id: 1,
+            img: 'images/people-photo-portrait-world-portfolio-1.jpg',
+            name: 'Юрій Т.',
+            login: 'sport_one',
+            feedback_amount: 10,
+            status: 1,
+            last_visit: '30хв назад',
+            title: 'Професійний майстер з ремонту дрібної побутової техніки',
+            description: 'Всім хеллоу! Маю досвід 5 років. Відремонтую все від кофемашинки до телевізора!',
+            price: '100 грн',
+            rating: 4.5,
+            time_status : 2
+
+        },
+        { id: 1,
+            img: 'images/people-photo-portrait-world-portfolio-1.jpg',
+            name: 'Юрій Т.',
+            login: 'sport_one',
+            feedback_amount: 10,
+            status: 1,
+            last_visit: '30хв назад',
+            title: 'Професійний майстер з ремонту дрібної побутової техніки',
+            description: 'Всім хеллоу! Маю досвід 5 років. Відремонтую все від кофемашинки до телевізора!',
+            price: '100 грн',
+            rating: 4.5,
+            time_status : 2
+
+        }
+    ];
+
+
+    window.onload = function(){
+        feedback._feedback_data = JSON.stringify(feedback_data);
+
+
+        // tasks._offers = JSON.stringify(offers);
+
+
+        let gallery = document.querySelector('profile-gallery');
+        const _allImages = [
+            { id: 0,
+                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img1.jpg'},
+            { id: 1,
+                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img2.png'},
+            { id: 2,
+                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img3.jpg'},
+            { id: 3,
+                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img4.jpg'},
+            { id: 4,
+                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img5.jpg'},
+            { id: 5,
+                img: 'http://www.dire.it/wp-content/uploads/2015/11/shopping_online.jpg'
+            },
+            {id:6,
+                img: 'https://www.mvcc.vic.gov.au/-/media/Images/Content/Libraries/1-Main-images/Hero-images/Online-Library.ashx'
+            },
+            {
+                id: 7,
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOkvPzEIiXwvJ4hCDfu__utnXwZhQRX2wWdqJj0Eh_0r7nc4i'
+            },
+            {
+                id: 8,
+                img: 'https://azcapitoltimes.com/files/2013/01/online-learning.jpg'
+            }
+        ];
+
+        gallery._allImages = JSON.stringify(_allImages);
+
+    }
+
+
+</script>
+
+
+
+
+<script>
+    let component_cat = document.querySelector('category-profile');
+
+    component_cat._cats  = [
+        {name:'Сантехн444ік', id: 1, parent_id:null, level: 1,  active_icon_png: 'images/004-1-plumbing.png', inactive_icon_png: 'images/004-1-plumbing.png'},
+        {name:'Викладачі', id: 2, parent_id:null, level: 1, active_icon_png: 'images/002-1-book.png', inactive_icon_png: 'images/002-1-book.png'},
+        {name:'Послуги швачки', id: 3, parent_id:null, level: 1,active_icon_png: 'images/003-1-new-sewing-machine.png', inactive_icon_png: 'images/003-1-new-sewing-machine.png'},
+        {name:'Догляд за тваринами', id: 4, parent_id:null, level: 1, active_icon_png: 'images/002-1-pawprints.png', inactive_icon_png: 'images/002-1-pawprints.png'},
+        {name:'Няні', id: 5, parentid:null, level: 1,active_icon_png: 'images/001-1-stroller.png', inactive_icon_png: 'images/001-1-stroller.png'},
+        {name:'Усі категорії', id: 6, parent_id: null, level: 1,active_icon_png: 'images/menu-1.png', inactive_icon_png: 'images/menu-1.png'},
+
+
+        {name:'Оздоблювальні роботи', id: 7, parent_id:3, level: 2, icon_png: 'images/018-handyman-tools.png', icon_svg: ''},
+        {name:'Клінінгові послуги', id: 8, parent_id:3, level: 2, icon_png: 'images/017-paintbrush.png', icon_svg: ''},
+        {name:'Кур\'єрські послуги', id: 9, parent_id:3, level: 2, icon_png: 'images/016-delivery-truck-silhouette.png', icon_svg: ''},
+        {name:'Будівельні роботи', id: 10, parent_id:3, level: 2, icon_png: 'images/construction-and-tools.png', icon_svg: ''},
+        {name:'Ремонт техніки', id: 11, parent_id:3, level: 2, icon_png: 'images/015-washing-machine.png', icon_svg: ''},
+
+
+        {name:'Логістичні послуги', id: 12, parent_id:2, level: 2},
+        {name:'Побутові послуги', id: 13, parent_id:2, level: 2},
+        {name:'Меблеві роботи', id: 14, parent_id:2, level: 2},
+        {name:'Робота в Інтернеті', id: 15, parent_id:1, level: 2},
+        {name:'Дизайн', id: 15, parent_id:1, level: 2},
+
+        {name:'Ремонт великої побутової техніки', id: 17, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 18, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 19, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 20, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 21, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 11, level: 3, amount: 222},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 11, level: 3, amount: 444},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 11, level: 3, amount: 555},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 11, level: 3, amount: 666},
+        {name:'обслуговування техніки', id: 26, parent_id: 11, level: 3, amount: 333},
+
+
+        {name:'обслуговування техніки', id: 26, parent_id: 10, level: 3, amount: 333, url: 'https://www.upwork.com/ab/find-work/'},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 10, level: 3, amount: 666, url: 'https://www.upwork.com/ab/find-work/'},
+        {name:'обслуговування техніки', id: 26, parent_id: 10, level: 3, amount: 333, url: 'https://www.upwork.com/ab/find-work/'},
+        {name:'Ремонт великої побутової техніки', id: 22, parent_id: 10, level: 3, amount: 222, url: 'https://www.upwork.com/ab/find-work/'},
+        {name:'Ремонт дрібної побутової техніки', id: 23, parent_id: 10, level: 3, amount: 444, url: 'https://www.upwork.com/ab/find-work/'},
+        {name:'Комп\'ютерна допомога ', id: 24, parent_id: 10, level: 3, amount: 555, url: 'https://www.upwork.com/ab/find-work/'},
+        {name:'Ремонт цифрової техніки ', id: 25, parent_id: 10, level: 3, amount: 666, url: 'https://www.upwork.com/ab/find-work/'},
+        {name:'обслуговування техніки', id: 26, parent_id: 10, level: 3, amount: 333, url: 'https://www.upwork.com/ab/find-work/'},
+    ];
+
+</script>
+
+
+
+
+</html>
