@@ -6,7 +6,7 @@ $(document).ready(function(){
     function fixedHeader(){
         var newScroll = $(window).scrollTop();
 
-        console.log(newScroll);
+        //console.log(newScroll);
 
         if (newScroll > 300) {
             console.log("Прокрутили более 300px");
@@ -27,12 +27,6 @@ $(document).ready(function(){
     $(window).on('scroll', function(){
         fixedHeader();
     });
-
-
-
-
-
-
 
     function toggleMenu() {
         if ($('body').hasClass('open-menu')) {
@@ -66,6 +60,3 @@ $(document).ready(function(){
 
 
 });
-
-
-
